@@ -1,4 +1,5 @@
 import 'package:animation_series/animated_icon/animated_icon_example.dart';
+import 'package:animation_series/color_tween/color_tween_example.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -50,6 +51,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           const SizedBox(height: 8.0),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ColorTweenExample();
+                }));
+              },
+              child: Text('Color Tween'),
+            ),
+          ),
         ],
       ),
     );
